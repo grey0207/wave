@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: outside none none;
+    font-family: Helvetica, Tahoma, Arial, "Microsoft YaHei";
+}
+body{
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+/*nav*/
+.mian-nav nav a{
+    color:#eee;
+}
+.mian-nav .navbar-inverse{
+    background-color: transparent;
+    border-color: transparent;
+}
+.mian-nav .navbar-inverse .navbar-brand{
+    color:#fff;
+}
+.mian-nav .navbar-inverse .navbar-nav > li > a{
+    color:#fff;
+}
+.mian-nav .navbar-inverse .navbar-nav > .active > a{
+    background-color: transparent;
+}
+.mian-nav .navbar-inverse .navbar-nav > .active > a:hover{
+    background-color: transparent;
+}
+.mian-nav .nav > li:hover{
+    border-bottom: 2px solid #fff;
+}
+.mian-nav .navbar-toggle{
+    border:0;
+}
+.mian-nav .navbar-inverse .navbar-toggle:focus,.navbar-inverse .navbar-toggle:hover{
+    background-color: #40afc1;
+}
+.mian-nav .navbar-inverse .navbar-collapse{
+    border-color: transparent;
+}
+.mian-nav .navbar-collapse{
+    box-shadow: none;
+}
+.headroom--unpinned{
+    background-color: white;
+}
+#home{
+    background-color: #65C4D3;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+#home #canvas{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    overflow:hidden;
+}
+#home img{
+    width: 100%;
+}
+@media (max-height: 900px)and (min-width: 1280px){
+    #home .container{
+        width:55%;
+    }
+}
+@media (max-height: 600px)and (min-width: 1280px){
+    #home .container{
+        width:50%;
+    }
+}
+@media (max-width: 767px){
+    #home .container{
+        margin-top: 40%;
+    }
+}
+@media (min-width: 768px)and (max-width: 970px){
+    #home .container{
+        margin-top: 15%;
+    }
+}
+@keyframes scale{
+    from {transform: scale(1.1);}  
+}
+@keyframes scale-2{
+    from {transform: scale(1.2);}  
+}
+@keyframes swing{
+    from {transform: rotate(120deg);}  
+}
+@keyframes jump{
+    0% {top:0px;} 
+    100% {top:20px;} 
+}
+@keyframes move{
+    0% {left:0px;} 
+    100% {left:-60px;} 
+}
+.bg-1{
+    position:relative;
+    animation:move 2s linear infinite alternate;
+}
+.bg-2{
+    animation:scale 2s linear infinite alternate;
+}
+.bg-3{
+    animation:scale 2s linear -1s infinite alternate;
+}
+.bg-4{
+    position:relative;
+    animation:jump 0.2s linear infinite alternate;
+}
+.bg-5{
+    transform-origin:22% 38%;
+    animation:swing 2s linear  infinite alternate;
+}
+.bg-6{
+    animation:scale 2s linear -2s infinite alternate;
+}
+.bg-7{
+    position:relative;
+    animation:jump 1.5s linear infinite alternate;
+}
+.bg-8{
+    transform-origin:73% 59.5%;
+    animation:scale 2s linear -0.5s infinite alternate;
+}
+.bg-9{
+    position:relative;
+    animation:jump 0.2s linear -1s infinite alternate;
+}
+.bg-10{
+    transform-origin:80% 42.5%;
+    animation:scale-2 1s linear -3s infinite alternate;
+}
+.bg-11{
+    transform-origin:87% 58%;
+    animation:swing 2s linear -1s infinite alternate;
+}
+#home .btn_scrolldown{
+    display: table;
+    height:76px;
+    position:absolute;
+    bottom:15px;
+    left:50%;
+    margin: -17px 0px 0px -32px;
+}
+#home .btn_scrolldown:hover{
+    transform: translate( 0,5px);
+}
+#home .btn_scrolldown a{
+    display:table-cell;
+    vertical-align: middle;
+}
+#works{
+    width: 100%;
+}
+
+#works h1{
+    text-align: center;
+    margin:70px 0 40px 0;
+    color:#65C4D3;
+}
+#works h1 i{
+    font-size: 26px;
+    position:relative;
+    top:-5px;
+}
+#works .nav{
+    margin-bottom: 40px;
+}
+#works a.thumbnail:hover {
+    border:1px solid #65C4D3;
+}
+
+
+#links{
+    height:100px;
+    margin-top: 70px;
+}
+#links div{
+    text-align: center;
+}
+#links ul{
+    display: inline-block;
+    overflow: hidden;
+    background-color: #fff;
+}
+#links li{
+    display: inline-block;
+    margin:0 15px;
+}
+#links a{
+    text-decoration: none;
+    color:#65C4D3;
+}
+#links li:hover{
+    transform:rotate(360deg);
+}
+#links a:hover{
+    color:#DB735C;
+}
+#links li{
+    transition: transform 0.5s;
+}
+#links a{
+    transition: color 0.5s;
+}
+
+#links div:after{
+    content:"";
+    display:inline-block;
+    width:100%;
+    height:2px;
+    background-color: #65C4D3;
+    z-index: -1;
+    position:relative;
+    top:-54px;
+}
+footer{
+    margin-top: 40px;
+}
+footer h6{
+    color:#666;
+}
